@@ -27,14 +27,6 @@ When the Discord server is ready:
 3. Replace `DISCORD_INVITE_URL` with the actual Discord invite link
 4. Push to `main`
 
-## Setting up the waitlist form (Formspree)
-
-1. Create an account at [formspree.io](https://formspree.io)
-2. Create a new form — name it "The Loop Waitlist"
-3. Copy the form ID (the part after `/f/` in the endpoint URL)
-4. In `index.html`, replace `XXXXXXXX` in `action="https://formspree.io/f/XXXXXXXX"` with your form ID
-5. Push and test with a real email submission
-
 ## Custom domain (when ready)
 
 1. Create a `CNAME` file in the repo root with just your domain:
