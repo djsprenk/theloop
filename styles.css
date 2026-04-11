@@ -436,6 +436,13 @@ section {
 
 .team-name {
   font-weight: 700;
+  margin-bottom: 0;
+
+}
+
+.team-location {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
   margin-bottom: var(--space-1);
 }
 
@@ -569,6 +576,17 @@ section {
   letter-spacing: -0.03em;
   color: var(--text-primary);
   text-decoration: none;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.footer-tagline {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
 }
 
 .footer-copy {
