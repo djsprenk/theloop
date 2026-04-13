@@ -135,19 +135,32 @@ section {
   display: flex;
   align-items: center;
   gap: var(--space-6);
+  flex-wrap: wrap;
 }
 
 .nav-logo {
-  font-size: var(--text-lg);
-  font-weight: 800;
   color: var(--text-primary);
-  letter-spacing: -0.03em;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .nav-logo:hover {
   text-decoration: none;
   color: var(--accent);
+}
+
+.nav-logo-svg {
+  margin-left: 6px;
+  height: 32px;
+  aspect-ratio: 1210 / 338;
+}
+
+.hero-logo {
+  height: 72px;
+  aspect-ratio: 1210 / 338;
+  color: var(--text-primary);
 }
 
 .nav-links {
