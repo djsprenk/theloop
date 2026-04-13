@@ -31,16 +31,24 @@ p, h1, h2, h3, h4 {
    ============================================================ */
 
 :root {
-  /* Colors — replace accent values with final brand colors */
-  --bg:              #0d0d0d;
-  --surface:         #161616;
-  --surface-raised:  #1e1e1e;
-  --border:          #2a2a2a;
-  --accent:          #a78bfa;   /* placeholder purple — update when brand is finalized */
-  --accent-dim:      #7c5fc7;
-  --text-primary:    #f0f0f0;
-  --text-secondary:  #888888;
-  --text-muted:      #555555;
+  /* Brand palette */
+  --midnight:   #18151a;
+  --deep-plum:  #262230;
+  --parchment:  #ede8df;
+  --clay:       #c97d5a;
+  --sand:       #d4a882;
+  --warm-white: #f7f4ee;
+
+  /* Semantic roles */
+  --bg:              var(--midnight);
+  --surface:         var(--deep-plum);
+  --surface-raised:  var(--deep-plum);
+  --border:          var(--sand);
+  --accent:          var(--clay);
+  --accent-dim:      var(--sand);
+  --text-primary:    var(--parchment);
+  --text-secondary:  var(--warm-white);
+  --text-muted:      var(--sand);
 
   /* Typography */
   --font-sans:       system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -124,7 +132,7 @@ section {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(13, 13, 13, 0.85);
+  background: rgba(24, 21, 26, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
@@ -217,7 +225,7 @@ section {
 
 .btn-primary {
   background: var(--accent);
-  color: #0d0d0d;
+  color: var(--midnight);
 }
 
 .btn-outline {
