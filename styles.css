@@ -134,8 +134,7 @@ section {
 .site-nav .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: var(--space-4);
+  gap: var(--space-6);
 }
 
 .nav-logo {
@@ -151,8 +150,28 @@ section {
   color: var(--accent);
 }
 
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: var(--space-8);
+}
+
+.nav-links a {
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
 .nav-cta {
   flex-shrink: 0;
+  margin-left: auto;
 }
 
 /* ============================================================
