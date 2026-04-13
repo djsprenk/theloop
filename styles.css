@@ -603,11 +603,20 @@ section {
 }
 
 .footer-logo {
-  font-weight: 800;
-  font-size: var(--text-lg);
-  letter-spacing: -0.03em;
   color: var(--text-primary);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer-logo-svg {
+  height: 40px;
+  aspect-ratio: 606 / 334;
 }
 
 .footer-brand {
