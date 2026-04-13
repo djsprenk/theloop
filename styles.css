@@ -230,8 +230,8 @@ section {
 
 .btn-outline {
   background: transparent;
-  color: var(--accent);
-  border: 1.5px solid var(--accent);
+  color: var(--sand);
+  border: 1.5px solid var(--sand);
 }
 
 .btn-lg {
@@ -350,6 +350,10 @@ section {
   }
 }
 
+.about-text .section-eyebrow {
+  color: var(--sand);
+}
+
 .about-text h2 {
   font-size: var(--text-2xl);
   margin-bottom: var(--space-6);
@@ -378,10 +382,10 @@ section {
 }
 
 .about-stat-number {
-  font-size: var(--text-3xl);
-  font-weight: 900;
-  color: var(--accent);
-  letter-spacing: -0.04em;
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--sand);
+  letter-spacing: -0.02em;
   line-height: 1;
   margin-bottom: var(--space-2);
 }
@@ -403,14 +407,14 @@ section {
 
 .feature-card {
   background: var(--surface);
-  border: 1px solid var(--border);
+  border: 1px solid var(--clay);
   border-radius: var(--radius-lg);
   padding: var(--space-8);
   transition: border-color 0.2s ease;
 }
 
 .feature-card:hover {
-  border-color: var(--accent);
+  border-color: var(--sand);
 }
 
 .feature-icon {
@@ -482,7 +486,7 @@ section {
 
 .team-location {
   font-size: var(--text-sm);
-  color: var(--text-muted);
+  color: var(--clay);
   margin-bottom: var(--space-1);
 }
 
@@ -507,13 +511,13 @@ section {
 
 .team-socials a {
   font-size: 1.1rem;
+  color: var(--sand);
   text-decoration: none;
-  opacity: 0.7;
-  transition: opacity 0.15s ease, transform 0.15s ease;
+  transition: color 0.15s ease, transform 0.15s ease;
 }
 
 .team-socials a:hover {
-  opacity: 1;
+  color: var(--warm-white);
   transform: translateY(-2px);
   text-decoration: none;
 }
@@ -640,7 +644,7 @@ section {
 
 .footer-copy {
   font-size: var(--text-sm);
-  color: var(--text-muted);
+  color: var(--sand);
 }
 
 .footer-links {
