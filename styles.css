@@ -2,7 +2,9 @@
    Reset
    ============================================================ */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -13,16 +15,25 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-img, svg, video {
+img,
+svg,
+video {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4 {
+p,
+h1,
+h2,
+h3,
+h4 {
   overflow-wrap: break-word;
 }
 
@@ -32,54 +43,54 @@ p, h1, h2, h3, h4 {
 
 :root {
   /* Brand palette */
-  --midnight:   #18151a;
-  --deep-plum:  #262230;
-  --parchment:  #ede8df;
-  --clay:       #c97d5a;
-  --sand:       #d4a882;
+  --midnight: #18151a;
+  --deep-plum: #262230;
+  --parchment: #ede8df;
+  --clay: #c97d5a;
+  --sand: #d4a882;
   --warm-white: #f7f4ee;
 
   /* Semantic roles */
-  --bg:              var(--midnight);
-  --surface:         var(--deep-plum);
-  --surface-raised:  var(--deep-plum);
-  --border:          var(--sand);
-  --accent:          var(--clay);
-  --accent-dim:      var(--sand);
-  --text-primary:    var(--parchment);
-  --text-secondary:  var(--warm-white);
-  --text-muted:      var(--sand);
+  --bg: var(--midnight);
+  --surface: var(--deep-plum);
+  --surface-raised: var(--deep-plum);
+  --border: var(--sand);
+  --accent: var(--clay);
+  --accent-dim: var(--sand);
+  --text-primary: var(--parchment);
+  --text-secondary: var(--warm-white);
+  --text-muted: var(--sand);
 
   /* Typography */
-  --font-sans:       system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-mono:       'SF Mono', 'Fira Code', monospace;
+  --font-sans: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', monospace;
 
   /* Scale */
-  --text-sm:    clamp(0.8rem,  1.5vw, 0.875rem);
-  --text-base:  clamp(1rem,    2vw,   1.125rem);
-  --text-lg:    clamp(1.125rem, 2.5vw, 1.25rem);
-  --text-xl:    clamp(1.5rem,   3vw,  1.75rem);
-  --text-2xl:   clamp(1.75rem,  4vw,  2.25rem);
-  --text-3xl:   clamp(2.25rem,  5vw,  3rem);
-  --text-hero:  clamp(3rem,     7vw,  3.25rem);
+  --text-sm: clamp(0.8rem, 1.5vw, 0.875rem);
+  --text-base: clamp(1rem, 2vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 2.5vw, 1.25rem);
+  --text-xl: clamp(1.5rem, 3vw, 1.75rem);
+  --text-2xl: clamp(1.75rem, 4vw, 2.25rem);
+  --text-3xl: clamp(2.25rem, 5vw, 3rem);
+  --text-hero: clamp(3rem, 7vw, 3.25rem);
 
   /* Spacing */
-  --space-1:   0.25rem;
-  --space-2:   0.5rem;
-  --space-3:   0.75rem;
-  --space-4:   1rem;
-  --space-6:   1.5rem;
-  --space-8:   2rem;
-  --space-12:  3rem;
-  --space-16:  4rem;
-  --space-24:  6rem;
-  --space-32:  8rem;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
 
   /* Layout */
-  --max-width:        1100px;
-  --content-padding:  clamp(1rem, 5vw, 2rem);
-  --radius:           8px;
-  --radius-lg:        16px;
+  --max-width: 1100px;
+  --content-padding: clamp(1rem, 5vw, 2rem);
+  --radius: 8px;
+  --radius-lg: 16px;
 }
 
 /* ============================================================
@@ -95,7 +106,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.2;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -525,12 +539,12 @@ section {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
-.feature-card:hover > .feature-title{
+.feature-card:hover>.feature-title {
   color: var(--sand);
   transition: color 0.3s ease;
 }
 
-.feature-card:hover > .feature-icon {
+.feature-card:hover>.feature-icon {
   filter: brightness(1.2);
   transition: filter 0.3s ease;
 }
@@ -539,7 +553,8 @@ section {
   font-size: 2rem;
   margin-bottom: var(--space-4);
   line-height: 1;
-  text-align: center;;
+  text-align: center;
+  ;
 }
 
 .feature-title {
