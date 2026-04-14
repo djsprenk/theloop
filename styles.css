@@ -61,7 +61,7 @@ p, h1, h2, h3, h4 {
   --text-xl:    clamp(1.5rem,   3vw,  1.75rem);
   --text-2xl:   clamp(1.75rem,  4vw,  2.25rem);
   --text-3xl:   clamp(2.25rem,  5vw,  3rem);
-  --text-hero:  clamp(3rem,     7vw,  5rem);
+  --text-hero:  clamp(3rem,     7vw,  3.25rem);
 
   /* Spacing */
   --space-1:   0.25rem;
@@ -420,15 +420,28 @@ section {
   border-color: var(--sand);
 }
 
+.feature-card:hover > .feature-title{
+  color: var(--sand);
+  transition: color 0.3s ease;
+}
+
+.feature-card:hover > .feature-icon {
+  filter: brightness(1.2);
+  transition: filter 0.3s ease;
+}
+
 .feature-icon {
   font-size: 2rem;
   margin-bottom: var(--space-4);
   line-height: 1;
+  text-align: center;;
 }
 
 .feature-title {
   font-size: var(--text-lg);
   margin-bottom: var(--space-3);
+  text-align: center;
+  color: var(--clay);
 }
 
 .feature-body {
