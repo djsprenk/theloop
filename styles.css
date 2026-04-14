@@ -250,6 +250,9 @@ section {
   padding-block: var(--space-32);
   text-align: center;
   position: relative;
+  background-image: url('assets/hero-image.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .hero::before {
