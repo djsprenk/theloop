@@ -31,6 +31,13 @@
     <path fill="currentColor" d="M307.03,510.48h69.99c-7.4-16.47-12.64-34.05-15.48-52.46h-54.51c-15.37,0-27.86-12.49-27.86-27.86v-169.11h-52.46v169.11c0,44.28,36.04,80.32,80.32,80.32Z"/>
   </symbol>
 
+  <!-- External link — Feather Icons -->
+  <symbol id="external-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+    <polyline points="15 3 21 3 21 9"/>
+    <line x1="10" y1="14" x2="21" y2="3"/>
+  </symbol>
+
   <!-- Globe (website) — Feather Icons -->
   <symbol id="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="12" cy="12" r="10"/>
