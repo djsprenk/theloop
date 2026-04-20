@@ -2,8 +2,9 @@
 <svg id="Vrstva_3" data-name="Vrstva 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1002.23 847.33">
   <defs>
     <style>
-      .cls-1 {
-        fill: currentColor;
+      .cls-1 { fill: #18151a; }
+      @media (prefers-color-scheme: dark) {
+        .cls-1 { fill: #ede8df; }
       }
     </style>
   </defs>
