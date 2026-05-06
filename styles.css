@@ -451,6 +451,7 @@ section {
 
 .about {
   background: var(--surface);
+  text-align: center;
 }
 
 .about-grid {
@@ -467,21 +468,17 @@ section {
   }
 }
 
-.about-text .section-eyebrow {
-  color: var(--sand);
-}
-
-.about-text h2 {
+.about h2 {
   font-size: var(--text-2xl);
   margin-bottom: var(--space-6);
 }
 
-.about-text p {
+.about p:not(.section-eyebrow) {
   color: var(--text-secondary);
   margin-bottom: var(--space-4);
 }
 
-.about-text p:last-child {
+.about p:last-child {
   margin-bottom: 0;
 }
 
