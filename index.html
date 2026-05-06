@@ -43,13 +43,16 @@
           <li><a href="#team">Who we are</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
-        <div class="nav-cta">
-          <!-- WAITLIST MODE: replace with Discord button when live -->
+        <div class="nav-cta-mobile">
           <a href="#join" class="btn btn-primary">Get Early Access</a>
-          <!-- DISCORD MODE: uncomment when Discord is ready
-          <a href="DISCORD_INVITE_URL" class="btn btn-primary" target="_blank" rel="noopener">Join on Discord →</a>
-          -->
         </div>
+      </div>
+      <div class="nav-cta">
+        <!-- WAITLIST MODE: replace with Discord button when live -->
+        <a href="#join" class="btn btn-primary">Get Early Access</a>
+        <!-- DISCORD MODE: uncomment when Discord is ready
+        <a href="DISCORD_INVITE_URL" class="btn btn-primary" target="_blank" rel="noopener">Join on Discord →</a>
+        -->
       </div>
     </div>
   </nav>
@@ -449,12 +452,13 @@
     });
 
     // Close menu when a nav link is tapped
-    document.querySelectorAll('.nav-links a').forEach(function (link) {
+    document.querySelectorAll('.nav-links a, .nav-cta-mobile a').forEach(function (link) {
       link.addEventListener('click', function () {
         nav.classList.remove('nav-open');
         toggle.setAttribute('aria-expanded', 'false');
       });
     });
+
   </script>
 
 </body>
