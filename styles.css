@@ -438,6 +438,12 @@ section {
   margin-top: var(--space-4);
 }
 
+.hero-note {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  margin-top: var(--space-2);
+}
+
 /* ============================================================
    Section headers
    ============================================================ */
@@ -549,11 +555,48 @@ section {
 }
 
 /* ============================================================
+   Testimonial
+   ============================================================ */
+
+.testimonial {
+  background: var(--surface);
+  text-align: center;
+}
+
+.testimonial .section-title {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-8);
+}
+
+.testimonial-quote {
+  max-width: 58ch;
+  margin-inline: auto;
+  border-left: 3px solid var(--clay);
+  padding-left: var(--space-6);
+  text-align: left;
+}
+
+.testimonial-quote p {
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: var(--space-4);
+}
+
+.testimonial-quote footer {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--clay);
+  letter-spacing: 0.04em;
+}
+
+/* ============================================================
    Team
    ============================================================ */
 
 .team {
-  background: var(--bg);
+  background: var(--surface);
 }
 
 .team-grid {
@@ -635,7 +678,7 @@ section {
    ============================================================ */
 
 .how-it-works {
-  background: var(--surface);
+  background: var(--bg);
 }
 
 .how-grid {
@@ -671,6 +714,10 @@ section {
 /* ============================================================
    FAQ
    ============================================================ */
+
+.faq {
+  background: var(--surface);
+}
 
 .faq-list {
   max-width: 680px;
@@ -737,7 +784,7 @@ section {
 .join {
   text-align: center;
   position: relative;
-  background: var(--surface);
+  background: var(--bg);
 }
 
 .join::before {
