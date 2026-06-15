@@ -20,6 +20,9 @@ Pure static HTML/CSS/JS — no framework, no bundler, no package manager.
 
 **Pages:**
 - `index.html` — main community landing page
+- `academy.html` — The Loop Academy course page (separate paid program)
+
+Both pages share a single `styles.css`. Academy-specific styles are appended at the bottom of that file under their own comment sections. The `academy.html` page uses `class="page-academy"` on `<body>` for potential page-scoped overrides.
 
 **Icons** are SVG symbols in `assets/icons/sprite.svg`, referenced inline via:
 ```html
@@ -38,6 +41,8 @@ To add a new icon, add a `<symbol id="name" viewBox="...">` to the sprite file.
 **Navigation** has three responsive states: full at >960px, collapsed links at 960px, hamburger menu at <600px. The toggle is wired via inline JS at the bottom of each page.
 
 **Accordions** (FAQ, curriculum) use native `<details>/<summary>` — no JS required. The open/close chevron is a CSS `::after` pseudo-element that rotates on `[open]`.
+
+**Countdown timer** on `academy.html` targets `2026-07-01T00:00:00Z`. When the date passes, the wrapper is replaced with an "enrollment is open" message.
 
 ## CSS conventions
 
