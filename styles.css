@@ -1040,16 +1040,18 @@ section {
    ============================================================ */
 
 .academy-hero {
-  background-image: none;
+  background-image: url("assets/hero-the-loop-academy.png");
   background-color: var(--midnight);
 }
 
 .academy-hero::before {
-  background: radial-gradient(
-    ellipse 80% 60% at 50% 50%,
-    color-mix(in srgb, var(--clay) 18%, transparent),
-    transparent 70%
-  );
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    radial-gradient(
+      ellipse 80% 60% at 50% 50%,
+      color-mix(in srgb, var(--clay) 18%, transparent),
+      transparent 70%
+    );
+  backdrop-filter: blur(2px);
 }
 
 .academy-hero::after {
