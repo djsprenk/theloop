@@ -62,8 +62,8 @@ h4 {
   --text-muted: var(--sand);
 
   /* Typography */
-  --font-sans: system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-mono: 'SF Mono', 'Fira Code', monospace;
+  --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "SF Mono", "Fira Code", monospace;
 
   /* Scale */
   --text-sm: clamp(0.8rem, 1.5vw, 0.875rem);
@@ -404,7 +404,9 @@ section {
   cursor: pointer;
   border: none;
   text-decoration: none;
-  transition: filter 0.15s ease, transform 0.15s ease;
+  transition:
+    filter 0.15s ease,
+    transform 0.15s ease;
 }
 
 .btn:hover {
@@ -445,16 +447,20 @@ section {
   padding-block: var(--space-32);
   text-align: center;
   position: relative;
-  background-image: url('assets/hero-image.png');
+  background-image: url("assets/hero-image.png");
   background-size: cover;
   background-position: center;
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 70% 50% at 50% 0%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 70%);
+  background: radial-gradient(
+    ellipse 70% 50% at 50% 0%,
+    color-mix(in srgb, var(--accent) 12%, transparent),
+    transparent 70%
+  );
   pointer-events: none;
 }
 
@@ -556,7 +562,6 @@ section {
   margin-bottom: 0;
 }
 
-
 /* ============================================================
    Features / Cards
    ============================================================ */
@@ -575,7 +580,10 @@ section {
   border: 1px solid var(--clay);
   border-radius: var(--radius-lg);
   padding: var(--space-8);
-  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .feature-card:hover {
@@ -584,12 +592,12 @@ section {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
-.feature-card:hover>.feature-title {
+.feature-card:hover > .feature-title {
   color: var(--sand);
   transition: color 0.3s ease;
 }
 
-.feature-card:hover>.feature-icon {
+.feature-card:hover > .feature-icon {
   filter: brightness(1.2);
   transition: filter 0.3s ease;
 }
@@ -661,10 +669,14 @@ section {
 }
 
 .academy::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 60% 80% at 50% 50%, color-mix(in srgb, var(--accent) 6%, transparent), transparent 70%);
+  background: radial-gradient(
+    ellipse 60% 80% at 50% 50%,
+    color-mix(in srgb, var(--accent) 6%, transparent),
+    transparent 70%
+  );
   pointer-events: none;
 }
 
@@ -740,7 +752,6 @@ section {
 .team-name {
   font-weight: 700;
   margin-bottom: 0;
-
 }
 
 .team-location {
@@ -767,7 +778,9 @@ section {
   font-size: 1.1rem;
   color: var(--sand);
   text-decoration: none;
-  transition: color 0.15s ease, transform 0.15s ease;
+  transition:
+    color 0.15s ease,
+    transform 0.15s ease;
 }
 
 .team-socials a:hover {
@@ -854,7 +867,7 @@ section {
 }
 
 .faq-question::after {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
@@ -891,10 +904,14 @@ section {
 }
 
 .join::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 60% 80% at 50% 100%, color-mix(in srgb, var(--accent) 8%, transparent), transparent 70%);
+  background: radial-gradient(
+    ellipse 60% 80% at 50% 100%,
+    color-mix(in srgb, var(--accent) 8%, transparent),
+    transparent 70%
+  );
   pointer-events: none;
 }
 
@@ -1028,18 +1045,22 @@ section {
 }
 
 .academy-hero::before {
-  background: radial-gradient(ellipse 80% 60% at 50% 50%,
-      color-mix(in srgb, var(--clay) 18%, transparent),
-      transparent 70%);
+  background: radial-gradient(
+    ellipse 80% 60% at 50% 50%,
+    color-mix(in srgb, var(--clay) 18%, transparent),
+    transparent 70%
+  );
 }
 
 .academy-hero::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 45% 45% at 75% 80%,
-      color-mix(in srgb, var(--sand) 8%, transparent),
-      transparent 60%);
+  background: radial-gradient(
+    ellipse 45% 45% at 75% 80%,
+    color-mix(in srgb, var(--sand) 8%, transparent),
+    transparent 60%
+  );
   pointer-events: none;
 }
 
@@ -1253,7 +1274,7 @@ section {
 }
 
 .curriculum-summary::after {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
@@ -1519,7 +1540,7 @@ section {
 }
 
 .pricing-features li::before {
-  content: '→';
+  content: "→";
   position: absolute;
   left: 0;
   color: var(--clay);
