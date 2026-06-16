@@ -760,6 +760,22 @@
       update();
       setInterval(update, 1000);
     })();
+
+    // Exclusive accordion — only one item open at a time
+    function makeExclusive(selector) {
+      var items = document.querySelectorAll(selector);
+      items.forEach(function (item) {
+        item.addEventListener('toggle', function () {
+          if (item.open) {
+            items.forEach(function (other) {
+              if (other !== item) other.removeAttribute('open');
+            });
+          }
+        });
+      });
+    }
+    makeExclusive('.curriculum-item');
+    makeExclusive('.faq-item');
   </script>
 
 </body>
