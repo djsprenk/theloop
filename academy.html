@@ -92,6 +92,11 @@
               <span class="countdown-number" id="cd-minutes">--</span>
               <span class="countdown-label">Minutes</span>
             </div>
+            <div class="countdown-sep" aria-hidden="true">:</div>
+            <div class="countdown-unit">
+              <span class="countdown-number" id="cd-seconds">--</span>
+              <span class="countdown-label">Seconds</span>
+            </div>
           </div>
           <p class="countdown-heading">until enrollment opens</p>
           <p class="countdown-note">Only 10 spots available &mdash; first come, first served.</p>
@@ -740,17 +745,20 @@
         var days = Math.floor(diff / 86400000);
         var hours = Math.floor((diff % 86400000) / 3600000);
         var minutes = Math.floor((diff % 3600000) / 60000);
+        var seconds = Math.floor((diff % 60000) / 1000);
 
         var dEl = document.getElementById('cd-days');
         var hEl = document.getElementById('cd-hours');
         var mEl = document.getElementById('cd-minutes');
+        var sEl = document.getElementById('cd-seconds');
         if (dEl) dEl.textContent = pad(days);
         if (hEl) hEl.textContent = pad(hours);
         if (mEl) mEl.textContent = pad(minutes);
+        if (sEl) sEl.textContent = pad(seconds);
       }
 
       update();
-      setInterval(update, 10000);
+      setInterval(update, 1000);
     })();
   </script>
 
