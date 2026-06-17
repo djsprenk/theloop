@@ -46,7 +46,7 @@ To add a new icon, add a `<symbol id="name" viewBox="...">` to the sprite file.
 
 **Accordions** (FAQ, curriculum) use native `<details>/<summary>` — no JS required. The open/close chevron is a CSS `::after` pseudo-element that rotates on `[open]`.
 
-**Countdown timer** on `academy.html` targets `2026-07-01T00:00:00Z`. When the date passes, the wrapper is replaced with an "enrollment is open" message.
+**Countdown timer** on `academy.html` targets `2026-06-30T17:00:00Z` (June 30, 2026 at 19:00 CEST). When the date passes, the wrapper is replaced with an "enrollment is open" message. A `.countdown-date` line below the counter uses `Intl.DateTimeFormat` to show the target in the visitor's local timezone.
 
 ## CSS conventions
 

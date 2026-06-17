@@ -112,6 +112,7 @@
           </div>
 
           <div class="countdown-block" id="countdown-wrapper">
+            <p class="countdown-date" id="cd-opens"></p>
             <div
               class="countdown-timer"
               aria-live="polite"
@@ -1056,9 +1057,23 @@
         });
       });
 
-      // Enrollment countdown — target: July 1, 2026 00:00 UTC
+      // Enrollment countdown — target: June 30, 2026 19:00 CEST (17:00 UTC)
       (function () {
-        var target = new Date("2026-07-01T00:00:00Z");
+        var target = new Date("2026-06-30T17:00:00Z");
+
+        var opensEl = document.getElementById("cd-opens");
+        if (opensEl) {
+          opensEl.textContent =
+            "Opens " +
+            target.toLocaleDateString(undefined, {
+              month: "long",
+              day: "numeric",
+              year: "numeric",
+              hour: "numeric",
+              minute: "2-digit",
+              timeZoneName: "short",
+            });
+        }
 
         function pad(n) {
           return String(n).padStart(2, "0");
