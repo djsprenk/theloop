@@ -63,11 +63,13 @@
           <div class="nav-cta-mobile">
             <a
               href="https://discord.gg/b9E9UucyGA"
-              class="btn btn-primary"
+              class="btn btn-primary enrollment-cta"
+              data-open-href="https://theloopacademy.zite.so"
+              data-open-text="Register now →"
               target="_blank"
               rel="noopener"
             >
-              Join on Discord →
+              <span class="cta-text">Join the Discord →</span>
               <span class="sr-only">(opens in new tab)</span>
             </a>
           </div>
@@ -75,11 +77,13 @@
         <div class="nav-cta">
           <a
             href="https://discord.gg/b9E9UucyGA"
-            class="btn btn-primary"
+            class="btn btn-primary enrollment-cta"
+            data-open-href="https://theloopacademy.zite.so"
+            data-open-text="Register now →"
             target="_blank"
             rel="noopener"
           >
-            Join on Discord →
+            <span class="cta-text">Join the Discord →</span>
             <span class="sr-only">(opens in new tab)</span>
           </a>
         </div>
@@ -102,11 +106,13 @@
           <div class="hero-actions">
             <a
               href="https://discord.gg/b9E9UucyGA"
-              class="btn btn-primary btn-lg"
+              class="btn btn-primary btn-lg enrollment-cta"
+              data-open-href="https://theloopacademy.zite.so"
+              data-open-text="Register for the next cohort →"
               target="_blank"
               rel="noopener"
             >
-              Join the Discord for more information →
+              <span class="cta-text">Join the Discord for more information →</span>
               <span class="sr-only">(opens in new tab)</span>
             </a>
             <p class="hero-note">Only 10 spots available &mdash; first come, first served.</p>
@@ -825,15 +831,7 @@
                 <strong>Best for:</strong>
                 people who want the knowledge and will hold themselves accountable.
               </p>
-              <a
-                href="https://discord.gg/b9E9UucyGA"
-                class="btn btn-outline pricing-cta"
-                target="_blank"
-                rel="noopener"
-              >
-                Join Discord to enroll
-                <span class="sr-only">(opens in new tab)</span>
-              </a>
+              <p class="pricing-cta pricing-coming-soon">Coming soon</p>
             </div>
 
             <div class="pricing-card pricing-card--featured">
@@ -869,11 +867,13 @@
               </p>
               <a
                 href="https://discord.gg/b9E9UucyGA"
-                class="btn btn-primary pricing-cta"
+                class="btn btn-primary pricing-cta enrollment-cta"
+                data-open-href="https://theloopacademy.zite.so"
+                data-open-text="Register now →"
                 target="_blank"
                 rel="noopener"
               >
-                Join Discord to enroll
+                <span class="cta-text">Join Discord to enroll</span>
                 <span class="sr-only">(opens in new tab)</span>
               </a>
             </div>
@@ -1017,11 +1017,13 @@
           <div class="discord-cta">
             <a
               href="https://discord.gg/b9E9UucyGA"
-              class="btn btn-primary btn-lg"
+              class="btn btn-primary btn-lg enrollment-cta"
+              data-open-href="https://theloopacademy.zite.so"
+              data-open-text="Register now →"
               target="_blank"
               rel="noopener"
             >
-              Join the Discord →
+              <span class="cta-text">Join the Discord →</span>
               <span class="sr-only">(opens in new tab)</span>
             </a>
             <p class="waitlist-note">
@@ -1099,6 +1101,17 @@
             });
         }
 
+        function openEnrollment() {
+          var wrapper = document.getElementById("countdown-wrapper");
+          if (wrapper) {
+            wrapper.innerHTML = '<p class="countdown-open">Enrollment is now open!</p>';
+          }
+          document.querySelectorAll(".enrollment-cta").forEach(function (el) {
+            el.href = el.dataset.openHref;
+            el.querySelector(".cta-text").textContent = el.dataset.openText;
+          });
+        }
+
         function pad(n) {
           return String(n).padStart(2, "0");
         }
@@ -1108,11 +1121,7 @@
           var diff = target - now;
 
           if (diff <= 0) {
-            var wrapper = document.getElementById("countdown-wrapper");
-            if (wrapper) {
-              wrapper.innerHTML =
-                '<p class="countdown-open">Enrollment is now open — join the Discord!</p>';
-            }
+            openEnrollment();
             return;
           }
 
