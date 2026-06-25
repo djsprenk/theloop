@@ -1104,7 +1104,7 @@
         function openEnrollment() {
           var wrapper = document.getElementById("countdown-wrapper");
           if (wrapper) {
-            wrapper.innerHTML = '<p class="countdown-open">Enrollment is now open!</p>';
+            wrapper.remove();
           }
           document.querySelectorAll(".enrollment-cta").forEach(function (el) {
             el.href = el.dataset.openHref;
