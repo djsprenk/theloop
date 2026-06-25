@@ -1424,7 +1424,7 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-6);
-  margin-bottom: var(--space-16);
+  margin-bottom: var(--space-6);
 }
 
 @media (max-width: 700px) {
@@ -1448,9 +1448,17 @@ section {
   display: block;
 }
 
+.testimonials-attribution {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: var(--space-12);
+  font-style: italic;
+}
+
 .pullquote-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
   gap: var(--space-6);
   text-align: left;
 }
