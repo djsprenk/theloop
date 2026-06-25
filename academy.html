@@ -919,17 +919,13 @@
                 people who want structure, honest feedback, and a crew to grow with — and who want
                 to finish ready to play out, not just ready to pass.
               </p>
-              <a
-                href="https://discord.gg/b9E9UucyGA"
-                class="btn btn-primary pricing-cta enrollment-cta"
+              <p
+                class="pricing-cta pricing-coming-soon enrollment-open-cta"
                 data-open-href="https://theloopacademy.zite.so"
                 data-open-text="Register now →"
-                target="_blank"
-                rel="noopener"
               >
-                <span class="cta-text">Join Discord to enroll</span>
-                <span class="sr-only">(opens in new tab)</span>
-              </a>
+                Coming soon
+              </p>
             </div>
           </div>
 
@@ -1163,6 +1159,15 @@
           document.querySelectorAll(".enrollment-cta").forEach(function (el) {
             el.href = el.dataset.openHref;
             el.querySelector(".cta-text").textContent = el.dataset.openText;
+          });
+          document.querySelectorAll(".enrollment-open-cta").forEach(function (el) {
+            var a = document.createElement("a");
+            a.href = el.dataset.openHref;
+            a.className = "btn btn-primary pricing-cta";
+            a.target = "_blank";
+            a.rel = "noopener";
+            a.innerHTML = el.dataset.openText + '<span class="sr-only"> (opens in new tab)</span>';
+            el.replaceWith(a);
           });
         }
 
