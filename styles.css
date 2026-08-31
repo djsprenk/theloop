@@ -700,12 +700,6 @@ section {
   margin-bottom: var(--space-8);
 }
 
-.academy-opening {
-  font-size: var(--text-base);
-  color: var(--clay);
-  margin-top: var(--space-4);
-}
-
 .academy-cta {
   display: flex;
   flex-direction: column;
