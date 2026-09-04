@@ -48,6 +48,15 @@ To add a new icon, add a `<symbol id="name" viewBox="...">` to the sprite file.
 
 **Countdown timer** on `academy.html` targets `2026-06-30T17:00:00Z` (June 30, 2026 at 19:00 CEST). When the date passes, the wrapper is replaced with an "enrollment is open" message. A `.countdown-date` line below the counter uses `Intl.DateTimeFormat` to show the target in the visitor's local timezone.
 
+## Formatting
+
+Formatted using Prettier (`.prettierrc`, `.prettierignore`). VS Code is configured to format on save via the `esbenp.prettier-vscode` extension (`.vscode/settings.json`, `.vscode/extensions.json`). Without an editor, run:
+
+```bash
+npm run format        # write formatting changes
+npm run format:check  # check without writing
+```
+
 ## CSS conventions
 
 - New sections go at the bottom of `styles.css` with a `/* === Section name === */` comment block header matching the existing style
